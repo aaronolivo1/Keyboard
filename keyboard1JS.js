@@ -226,25 +226,55 @@ ctx13.font = "20px Arial";
 ctx13.fillText("B♭", 698, 363);
 ctx13.fillText("A♯", 698, 333);
 
-  BKEY1canvas.addEventListener('click', (event) => {
-      const pos = {
-          x: event.clientX,
-          y: event.clientY
-        };
-          if((pos.x >= 173 && pos.x <= 233)&&(pos.y >= 0 && pos.y <= 368))
-          {
-            var audio1 = document.getElementById("BKEY1A");
-            audio1.play();
-          }
-      }
-   );
+var returnToTitle = document.getElementById("Keyboard1");
+var ctx14 = returnToTitle.getContext('2d');
+ctx14.fillStyle = "yellow";
+ctx14.beginPath();
+ctx14.moveTo(930,10);
+ctx14.lineTo(930,50);
+ctx14.lineTo(1150,50);
+ctx14.lineTo(1150,10);
+ctx14.closePath();
+ctx14.fill();
+ctx14.stroke();
+ctx14.fillStyle = "black";
+ctx14.font = "40px, Arial";
+ctx14.fillText("Return to Title Screen", 932, 48);
+
+function goToTitle() {
+  window.location='titleScreen.html';
+}
+
+returnToTitle.addEventListener('click', (event) => {
+  const pos = {
+    x: event.clientX,
+    y: event.clientY
+  };
+  if((pos.x >= 931 && pos.x <= 1149)&&(pos.y >= 10 && pos.y <= 50))
+  {
+    goToTitle();
+  }
+})
+
+ BKEY1canvas.addEventListener('click', (event) => {
+     const pos = {
+         x: event.clientX,
+         y: event.clientY
+       };
+         if((pos.x >= 174 && pos.x <= 232)&&(pos.y >= 0 && pos.y <= 368))
+         {
+                      var audio1 = document.getElementById("BKEY1A");
+           audio1.play();
+         }
+         }
+  );
 
    BKEY2canvas.addEventListener('click', (event) => {
      const pos = {
          x: event.clientX,
          y: event.clientY
        };
-         if((pos.x >= 276 && pos.x <= 336)&&(pos.y >= 0 && pos.y <= 368)){
+         if((pos.x >= 277 && pos.x <= 335)&&(pos.y >= 0 && pos.y <= 368)){
            var audio1 = document.getElementById("BKEY2A");
            audio1.play();
           }
@@ -256,7 +286,7 @@ ctx13.fillText("A♯", 698, 333);
           x: event.clientX,
           y: event.clientY
         };
-          if((pos.x >= 482 && pos.x <= 542)&&(pos.y >= 0 && pos.y <= 368)){
+          if((pos.x >= 483 && pos.x <= 541)&&(pos.y >= 0 && pos.y <= 368)){
             var audio1 = document.getElementById("BKEY3A");
             audio1.play();
  }
@@ -268,7 +298,7 @@ ctx13.fillText("A♯", 698, 333);
            x: event.clientX,
            y: event.clientY
          };
-           if((pos.x >= 585 && pos.x <= 645)&&(pos.y >= 0 && pos.y <= 368))
+           if((pos.x >= 586 && pos.x <= 644)&&(pos.y >= 0 && pos.y <= 368))
            {
              var audio1 = document.getElementById("BKEY4A");
              audio1.play();
@@ -281,7 +311,7 @@ BKEY5canvas.addEventListener('click', (event) => {
       x: event.clientX,
       y: event.clientY
     };
-      if((pos.x >= 688 && pos.x <= 748)&&(pos.y >= 0 && pos.y <= 368))
+      if((pos.x >= 689 && pos.x <= 747)&&(pos.y >= 0 && pos.y <= 368))
       {
         var audio1 = document.getElementById("BKEY5A");
         audio1.play();
@@ -294,12 +324,12 @@ const pos = {
 x: event.clientX,
 y: event.clientY
     };
-        if((pos.x >= 100 && pos.x <= 173)&&(pos.y >= 0 && pos.y <= 367))
+        if((pos.x >= 101 && pos.x <= 172)&&(pos.y >= 0 && pos.y <= 367))
         {
           var audio1 = document.getElementById("WKEY1A");
           audio1.play();
         }
-         if((pos.x >= 100 && pos.x <= 203)&&(pos.y >= 368 && pos.y <= 568))
+         if((pos.x >= 101 && pos.x <= 202)&&(pos.y >= 368 && pos.y <= 568))
         {
           var audio1 = document.getElementById("WKEY1A");
           audio1.play();
@@ -311,12 +341,12 @@ y: event.clientY
   x: event.clientX,
   y: event.clientY
       };
-          if((pos.x >= 233 && pos.x <= 276)&&(pos.y >= 0 && pos.y <= 367))
+          if((pos.x >= 234 && pos.x <= 275)&&(pos.y >= 0 && pos.y <= 367))
           {
             var audio1 = document.getElementById("WKEY2A");
             audio1.play();
           }
-           if((pos.x >= 203 && pos.x <= 306)&&(pos.y >= 368 && pos.y <= 568))
+           if((pos.x >= 204 && pos.x <= 305)&&(pos.y >= 368 && pos.y <= 568))
           {
             var audio1 = document.getElementById("WKEY2A");
             audio1.play();
@@ -328,12 +358,12 @@ y: event.clientY
     x: event.clientX,
     y: event.clientY
         };
-            if((pos.x >= 336 && pos.x <= 409)&&(pos.y >= 0 && pos.y <= 367))
+            if((pos.x >= 337 && pos.x <= 408)&&(pos.y >= 0 && pos.y <= 367))
             {
               var audio1 = document.getElementById("WKEY3A");
               audio1.play();
             }
-             if((pos.x >= 306 && pos.x <= 409)&&(pos.y >= 368 && pos.y <= 568))
+             if((pos.x >= 307 && pos.x <= 408)&&(pos.y >= 368 && pos.y <= 568))
             {
               var audio1 = document.getElementById("WKEY3A");
               audio1.play();
@@ -345,12 +375,12 @@ y: event.clientY
       x: event.clientX,
       y: event.clientY
           };
-              if((pos.x >= 409 && pos.x <= 482)&&(pos.y >= 0 && pos.y <= 367))
+              if((pos.x >= 410 && pos.x <= 481)&&(pos.y >= 0 && pos.y <= 367))
               {
                 var audio1 = document.getElementById("WKEY4A");
                 audio1.play();
               }
-               if((pos.x >= 409 && pos.x <= 512)&&(pos.y >= 368 && pos.y <= 568))
+               if((pos.x >= 410 && pos.x <= 511)&&(pos.y >= 368 && pos.y <= 568))
               {
                 var audio1 = document.getElementById("WKEY4A");
                 audio1.play();
@@ -362,12 +392,12 @@ y: event.clientY
         x: event.clientX,
         y: event.clientY
             };
-                if((pos.x >= 542 && pos.x <= 585)&&(pos.y >= 0 && pos.y <= 367))
+                if((pos.x >= 543 && pos.x <= 584)&&(pos.y >= 0 && pos.y <= 367))
                 {
                   var audio1 = document.getElementById("WKEY5A");
                   audio1.play();
                 }
-                 if((pos.x >= 512 && pos.x <= 615)&&(pos.y >= 368 && pos.y <= 568))
+                 if((pos.x >= 513 && pos.x <= 614)&&(pos.y >= 368 && pos.y <= 568))
                 {
                   var audio1 = document.getElementById("WKEY5A");
                   audio1.play();
@@ -379,12 +409,12 @@ y: event.clientY
           x: event.clientX,
           y: event.clientY
               };
-                  if((pos.x >= 645 && pos.x <= 688)&&(pos.y >= 0 && pos.y <= 367))
+                  if((pos.x >= 646 && pos.x <= 687)&&(pos.y >= 0 && pos.y <= 367))
                   {
                     var audio1 = document.getElementById("WKEY6A");
                     audio1.play();
                   }
-                   if((pos.x >= 615 && pos.x <= 718)&&(pos.y >= 368 && pos.y <= 568))
+                   if((pos.x >= 614 && pos.x <= 717)&&(pos.y >= 368 && pos.y <= 568))
                   {
                     var audio1 = document.getElementById("WKEY6A");
                     audio1.play();
@@ -396,12 +426,12 @@ y: event.clientY
             x: event.clientX,
             y: event.clientY
                 };
-                    if((pos.x >= 748 && pos.x <= 821)&&(pos.y >= 0 && pos.y <= 367))
+                    if((pos.x >= 749 && pos.x <= 820)&&(pos.y >= 0 && pos.y <= 367))
                     {
                       var audio1 = document.getElementById("WKEY7A");
                       audio1.play();
                     }
-                     if((pos.x >= 718 && pos.x <= 821)&&(pos.y >= 368 && pos.y <= 568))
+                     if((pos.x >= 719 && pos.x <= 820)&&(pos.y >= 368 && pos.y <= 568))
                     {
                       var audio1 = document.getElementById("WKEY7A");
                       audio1.play();
@@ -413,7 +443,7 @@ y: event.clientY
               x: event.clientX,
               y: event.clientY
                   };
-                      if((pos.x >= 821 && pos.x <= 924)&&(pos.y >= 0 && pos.y <= 568))
+                      if((pos.x >= 822 && pos.x <= 923)&&(pos.y >= 0 && pos.y <= 568))
                       {
                         var audio1 = document.getElementById("WKEY8A");
                         audio1.play();

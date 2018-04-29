@@ -1,0 +1,49 @@
+body
+{
+  background-color: pink;
+  width: 500px;
+  margin: 100px auto;
+}
+
+
+h1
+{
+  color: black;
+  font-family: "Blackletter";
+     font-size: 500%;
+   }
+h3
+{
+  color: black;
+font-family: "times-new-roman";
+position:relative;
+bottom: 0;
+}
+
+img
+{
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+p {
+  background: #D2EBEC;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid blue;
+    color: #000;
+  font-size: 20px;
+  font-family: Courier;
+}
+
+
+a {
+  color: #A00F9E;
+}
+a:visited {
+  color: #07888C;
+}
+a:hover {
+  color: #800000;
+  text-decoration: underline;
+}
